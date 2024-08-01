@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marksheet.web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<style>
+    .section1{
+  font-family: 'Times New Roman', Times, serif;
+  padding: 20px;
+}
+.main{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://i.pinimg.com/550x/ed/3a/24/ed3a2433206d8030389b42b1fb51ba21.jpg);
+  background-color: aqua;
+  border: 2px black solid;
+}
+#col-srNo{
+  padding: 30px;
+}
+#col-logo{
+  padding: 30px;
+  text-align: center;
+}
+#logo{
+  height: 150px;
+  width: 100px;
+}
+#col-Qr{
+  padding: 30px;
+}
+
+#orCode{
+  height: 80px;
+  width: 80px;
+  float: right;
+}
+
+
+#clgName{
+  text-align: center;
+
+}
+
+
+#markSheet{
+  padding: 10px;
+  text-align: center;
+}
+
+#nameCourse{
+ border: 1px black solid;
+}
+
+#col-candiName{
+  text-align: center;
+  padding: 20px;
+  border: 1px black solid;
+}
+
+#col-courseDep{
+  text-align: center;
+  padding: 20px;
+  border: 1px black solid;
+}
+
+#col-regNo{
+   text-align: center;
+  padding: 20px;
+  border: 1px black solid;
+}
+#enrollNo{
+   text-align: center;
+  padding: 20px;
+  border: 1px black solid;
+}
+
+#trainiName{
+   text-align: center;
+  padding: 20px;
+  border: 1px black solid;
+}
+
+
+#container-mark{
+  margin-top: 8px;
+}
+
+#markHeader{
+  border: 1px black solid;
+}
+
+#headSubCode{
+   text-align: center;
+  padding: 20px;
+  /* border: 1px black solid; */
+}
+
+#headSubName{
+   padding: 20px;
+  /* border: 1px black solid; */
+}
+#maxMark{
+   text-align: center;
+  padding: 20px;
+  /* border: 1px black solid; */
+}
+#combo-tpt{
+    text-align: center;
+  padding: 5px;
+  /* border: 1px black solid; */
+
+}
+
+#head-theory{
+    text-align: center;
+  padding: 5px;
+  /* border: 1px black solid; */
+}
+#head-practical{
+  text-align: center;
+  padding: 5px;
+  /* border: 1px black solid; */
+}
+
+#head-total{
+    text-align: center;
+  padding: 5px;
+  /* border: 1px black solid; */
+}
+#head-marksInWords{
+     text-align: center;
+  padding: 20px;
+  /* border: 1px black solid; */ 
+}
+
+#body-marksheet{
+  border: 1px black solid;
+}
+#body-maxmark{
+   text-align: center;
+  padding: 20px;
+}
+
+#courseCode{
+   text-align: center;
+  padding: 20px;
+}
+#subName{
+   /* text-align: center; */
+  padding: 20px;
+}
+#entermark{
+  padding: 20px;
+}
+input{
+  width: 100%;
+  background-color: transparent;
+  border: 0.5px solid black;
+}
+input:hover{
+    background-color:white;
+    transition: 0.5s;
+    box-shadow: -3px 6px 6px black;
+    border-radius: 6px;
+}
+#zero{
+    color: brown;
+    font-size: larger;
+}
+</style>
+<body>
+  <div class="section section1">
+    <div class="container main">
+    
+      <div class="row">
+        <div class="col-4" id="col-srNo">
+          <span><b>
+            Sr.No : </b>
+          </span>
+
+          <span id="zero">
+           <b> 00000000000</b>
+          </span>
+        </div>
+
+        
+        <div class="col-4" id="col-logo">
+          <img src="https://www.gala-global.org/sites/default/files/HINDUSTHAN_COLLEGE_OF_ENGINEERING_AND_TECHNOLOGY_2.jpg" id="logo" alt="">
+        </div>
+        <div class="col-4" id="col-Qr">
+          <img src="img/frame.png" id="orCode" alt="">
+        </div>
+
+      </div>
+      <div class="row" id="clgName">
+        <h3><b>HINDUSTHAN COLLEGE OF ENGINEERING AND TECHNOLOGY</b></h3>
+        <h3 ><b>இந்துஸ்தான் பொறியியல் மற்றும் தொழில்நுட்பக் கல்லூரி</b> </h3>
+        <br>
+         <!-- <img height="100%" width="100%" src="img/Add_a_heading-removebg-preview.png" alt=""> -->
+        <h4><b>AN AUTONOMOUS INSTITUTION</b></h4>
+        <h5><b>
+          Affiliated to Anna University | Approved by AICTE
+          Accredited by NBA and NAAC with"A++" grade</b>
+        </h5><br>
+        <h5><b>Valley Campus, Coimbatore-641032</b></h5>
+      </div>
+
+      <div class="row" id="markSheet">
+        <h4><b>
+           BE. DEGREE EXAMINATION 
+           GRADE SHEET</b>
+        </h4>
+      </div>
+      <div class="container">
+
+      <div class="row" id="nameCourse">
+
+      
+        <div class="col-6" id="col-candiName">
+          <p><b>NAME OF THE CANDIDATE </b></p>
+          <h6> <b>ARUN KUMAR S </b></h6>
+        </div>
+        <div class="col-6" id="col-courseDep">
+          <p><b>PROGRAMME & BRANCH </b></p> 
+          <h6> <b>BE-ECE </b></h6>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-3" id="col-regNo">
+          <p> <b>REG.NO : </b> </p> 
+          <h6><b>720721106031 </b></h6>
+
+        </div>
+
+        <div class="col-3" id="enrollNo">
+          <p><b>ENROLLMENT.NO : </b></p> 
+          <h6><b>#ARUN6031 </b></h6>
+
+        </div>
+
+        <!-- col for the authority training center name -->
+        <div class="col-6" id="trainiName">
+          <p><b>AUTHORITY TRAINING CENTR NAME </b></p>
+          <h6><b>COE OF THE HICET </b></h6>
+        </div>
+      </div>
+
+      </div>
+      <div class="container" id="container-mark">
+        <!-- row for the heading of the col -->
+
+        <div class="row" id="markHeader">
+
+          <!-- col for the heading of the subject code -->
+          <div class="col-2" id="headSubCode">
+            <p> <b>SUBJECT CODE </b></p>
+          </div>
+
+          <div class="col-4" id="headSubName">
+            <p><b>
+              SUBJECT NAME</b>
+            </p>
+
+          </div>
+          <!-- col for the maximum mark  -->
+          <div class="col-1" id="maxMark">
+            <p> <b>MAX. MARK </b></p>
+          </div>
+
+          <div class="col-3">
+            <div class="row" id="combo-tpt">
+              <p><b>MARK OBTAINED IN FIGURES</b></p>
+            </div>
+            <div class="row">
+              <div class="col-4" id="head-theory">
+                <p><b>THEORY </b></p>
+              </div>
+
+              <div class="col-4" id="head-practical">
+                <p> <b>PRACTICAL </b></p>
+              </div>
+
+              <div class="col-4" id="head-total">
+                <p> <b>TOTAL </b></p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-2" id="head-marksInWords">
+            <b>TOTAL IN WORDS</b>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- container for the body of the marksheet -->
+
+      <div class="container" id="body-marksheet">
+       <div class="row">
+        <div class="col-2" id="courseCode">
+          <p><b>21MA104 </b></p>
+        </div>
+
+        <div class="col-4" id="subName">
+          <p> <b>PROBABILITY AND RANDOM PROCESS</b></p>
+        </div>
+
+        <div class="col-1" id="body-maxmark">
+          <p> <b>100</b></p>
+        </div>
+
+        <div class="col-1" id="entermark">
+          <input type="number">
+        </div>
+
+        <div class="col-1" id="entermark">
+          <input type="number">
+        </div>
+
+        <div class="col-1" id="entermark">
+           <input type="number">
+        </div>
+
+        <div class="col-2" id="entermark">
+            <input type="number">
+        </div>
+       </div>
+
+           <div class="row">
+        <div class="col-2" id="courseCode">
+          <p> <b>21EC4201 </b></p>
+        </div>
+
+        <div class="col-4"  id="subName">
+          <p> <b>ELECTRO MAGNETIC FIELDS AND WAVE </b></p>
+        </div>
+
+        <div class="col-1" id="body-maxmark">
+          <p> <b>100 </b></p>
+        </div>
+ <div class="col-1" id="entermark">
+          <input type="number">
+        </div>
+
+        <div class="col-1" id="entermark">
+          <input type="number">
+        </div>
+
+        <div class="col-1" id="entermark">
+           <input type="number">
+        </div>
+
+        <div class="col-2" id="entermark">
+            <input type="number">
+        </div>
+       </div>
+
+           <div class="row">
+        <div class="col-2" id="courseCode">
+          <p><b>21EC4202 </b></p> 
+        </div>
+
+        <div class="col-4"  id="subName">
+          <p><b>ANALOG COMMUNICATION </b></p>
+        </div>
+
+        <div class="col-1" id="body-maxmark">
+          <p><b>100 </b></p>
+        </div>
+
+         <div class="col-1" id="entermark">
+          <input type="number">
+        </div>
+
+        <div class="col-1" id="entermark">
+          <input type="number">
+        </div>
+
+        <div class="col-1" id="entermark">
+           <input type="number">
+        </div>
+
+        <div class="col-2" id="entermark">
+            <input type="number">
+        </div>
+       </div>
+
+           <div class="row">
+        <div class="col-2" id="courseCode">
+          <p> <b>21EC4203 </b></p>
+        </div>
+
+        <div class="col-4"  id="subName">
+          <p> <b>LINEAR INTEGRATION CIRCUITS </b></p>
+        </div>
+
+        <div class="col-1" id="body-maxmark">
+          <p> <b>100 </b></p>
+        </div>
+
+        <div class="col-1" id="entermark">
+          <input type="number">
+        </div>
+
+        <div class="col-1" id="entermark">
+          <input type="number">
+        </div>
+
+        <div class="col-1" id="entermark">
+           <input type="number">
+        </div>
+
+        <div class="col-2" id="entermark">
+            <input type="number">
+        </div>
+       </div>
+
+           <div class="row">
+        <div class="col-2" id="courseCode">
+          <p> <b>21EC4251 </b></p>
+        </div>
+
+        <div class="col-4"  id="subName">
+          <p> <b>CONTROL SYSYTEM </b></p>
+        </div>
+
+        <div class="col-1" id="body-maxmark">
+          <p> <b>100 </b></p>
+        </div>
+
+        <div class="col-1" id="entermark">
+          <input type="number">
+        </div>
+
+        <div class="col-1" id="entermark">
+          <input type="number">
+        </div>
+
+        <div class="col-1" id="entermark">
+           <input type="number">
+        </div>
+
+        <div class="col-2" id="entermark">
+            <input type="number">
+        </div>
+       </div>
+
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+           <b> Credits earn :</b>
+          </div>
+          <div class="col-8">
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+          <b>  Credits earn : </b>
+          </div>
+          <div class="col-8">
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
