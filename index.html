@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindusthan Annual Marksheet.web</title>
+    <link rel="icon" href="https://www.gala-global.org/sites/default/files/HINDUSTHAN_COLLEGE_OF_ENGINEERING_AND_TECHNOLOGY_2.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+   body{
+    background-color: rgb(255, 255, 255);
+   }
+   .section{
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-image: url("img/marksheet back.jpg");
+    margin: 100px;
+    background-color: #ffffff;
+    border: 3px rgb(0, 0, 83) solid;
+   }
+     #img1{
+        border-radius: 10px;
+        height: 130px;
+        width: 110px;
+        border: 2px solid black;
+        margin-top: 5px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 120px;
+        box-shadow: -3px 3px 3px skyblue  ;
+        /* padding-top: 10px; */
+     }
+     #text1{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        color: #022d6e;
+        border: 2px rgb(0, 0, 83) solid;
+     }
+     #name1{
+        
+         color: #022d6e;
+         font-family: 'Times New Roman', Times, serif;
+         border: 2px rgb(0, 0, 83) solid;
+     }
+     #name2{
+        color: #022d6e;
+        font-family: 'Times New Roman', Times, serif;
+        border-top:2px rgb(0, 0, 83) solid;
+
+     }
+  
+    input{
+        margin-top: 9px;
+        width: 90%;
+        border-radius: 5px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    input:hover{
+        box-shadow: -3px 5px 5px ;
+        transition: 0.4s;
+    } 
+    #align1{
+        margin: 10px ;
+        padding: 0px;
+        color: #022d6e; 
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        
+        
+    }  
+    /* .container8,.container9,.container10{
+        background-color: blanchedalmond;
+    }  */
+    #align,#align2,#align3,#align4,#align5,#align6,#align7,#align8{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #tit{
+        text-align: center;
+    }
+    #zero{
+        color: rgb(133, 45, 45);
+        font-size: larger;
+    }
+    #para{
+        color: rgba(0, 0, 0, 0.514);
+    }
+    #date{
+        font-size: 20px;
+        margin-top: 60px;
+          margin-left: 95px;
+    }
+    #date1{
+        color: rgb(134, 45, 45);
+    }
+    #sign{
+font-size: 23px;
+margin-top: 10px;
+text-align: center;
+    }
+    #con{
+    font-size: 23px;
+    color: rgb(134, 45, 45) ;
+    text-align: center;
+    }
+    #foot1{
+        font-size: 23px;
+        color: rgb(134, 45, 45);
+        margin-top: 60px;
+        /* margin-left: 240px; */
+    }
+    /* #foot2{
+        font-size: 23px;
+        color: rgb(134, 45, 45);
+        margin-right: 240px;
+    } */
+    #star{
+       margin: 0px;
+       padding: 0px;
+       color: black;
+       font-size: larger;
+    }
+     .container9{
+        margin-top: 15px;
+        text-align: center;
+     }
+     #tot{
+        color: rgb(134, 45, 45);
+     }
+     #grandTotal{
+        color: black;
+     }
+     #grandTotalWords{
+        color: black;
+     }
+</style>
+    <body>
+        <div class="section">
+            <div class="container-fluid certificate">
+                <div class="row top">
+                    <div class="col-4 serial" style="padding:0px 0px 5px 30px;">          
+                        <b>Sr. No. <span id="zero">0000000</span></b>
+                    </div>
+                     <div class="col-4 logo">
+                        <img src="img/HINDUSTHAN_COLLEGE_OF_ENGINEERING_AND_TECHNOLOGY_2.webp" alt="" id="img1">
+                     </div>
+                      <div class="col-4 qr">
+                        <img src="img/frame.png" style="height: 140px;width: 140px;float:right;padding: 20px;" alt="">
+                      </div>
+                </div>
+    
+                <div class="row title">
+                    <!-- <img src="clg name 1.png" id="img2"> -->
+                    <h3 id="tit"><b>HINDUSTHAN COLLEGE OF ENGINEERING AND TECHNOLOGY</b></h3>
+                    <h3 id="tit" ><b>இந்துஸ்தான் பொறியியல் மற்றும் தொழில்நுட்பக் கல்லூரி</b> </h3>
+                </div>
+                <br>
+            </div>
+            <div style="border-left:0px ;" class="container name20" >
+                <div class="col-12">
+                <h1 id="text1" style="  font-family: 'Times New Roman', Times, serif;">Annual Statement of Marks</h1>
+            </div>
+            </div><br>
+            <div class="container names">
+                <div class="row name1">
+                    <div class="col-6" id="name1" style="border-left: 0px;">
+                        <h3  style="text-align: center; border-left: 0px;">Name of the Candidate</h3>
+                        <h4  style="text-align: center; border-left: 0px;">(Candidate's Name)</h4>
+                    </div>
+                    <div class="col-6" id="name2">
+                        <h3 style="text-align: center;">Course Name with Code</h3>
+                        <h4  style="text-align: center;">B.E Electronics and Communication Engineering<br>EC21345</h4>
+                    </div>
+                </div>
+                <div class="row name1">
+                    <div class="col-3" id="name3" style="border-bottom: 2px solid  rgb(0, 0, 83);color:  rgb(0, 0, 83);font-family: 'Times New Roman', Times, serif;">
+                        <h3  style="text-align: center;">Register No :</h3>
+                        <h4  style="text-align: center;">Registration number :</h4>
+                    </div>
+                    <div class="col-3" id="name1" style="border-top:0px solid ;border-right: 0px;">
+                        <h3  style="text-align: center;border-top:0px solid ;border-right: 0px;">Enrollment No</h3>
+                        <h4  style="text-align: center;">(Enrollment Number)</h4>
+                    </div>
+                    <div class="col-6" id="name1" style="border-right: 0px;">
+                        <h3 style="text-align: center;border-right: 0px;border-left: 0px;">Authortized center name with Code</h3>
+                        <h4  style="text-align: center;">Hindusthan College of Engineering and Technology<br>71345</h4>
+                    </div>
+                </div><br>
+                <div class="container3">
+                <div class="row name1">
+                    <div class="col-3" id="name1" style="border-left:0px ;border-right: 0px;">
+                        <h3  style="text-align: center;">Subject Code</h3>
+                        <h4  style="text-align: center;">(Candidate's Name)</h4>
+                    </div>
+                    <div class="col-3" id="name1">
+                        <h3  style="text-align: center;border-right: 0px;">Subject Code</h3>
+                        <h4  style="text-align: center;">(Candidate's Name)</h4>
+                    </div>
+                    <div class="col-1" id="name1" style="border-left: 0px;border-right: 0px;" >
+                        <h3 style="text-align: center;">Max Marks</h3>
+                    </div>
+                    <div class="col-3" id="name1">
+                        <h3 style="text-align: center;border-left: 0px;border-right: 0px;">Marks Obtained in Figures</h3>
+                        <div class="row">
+                            <div class="col-4" style="border-right:2px solid ;border-top: 2px solid;">
+                                <h6 style="text-align: center;">Theory</h6>
+                            </div>
+                            <div class="col-4" style="border-right:2px solid ;border-top: 2px solid;">
+                                <h6 style="text-align: center;">Practical</h6>
+                            </div>
+                            <div class="col-4" style="border-top: 2px solid;">
+                                <h6 style="text-align: center;">Total</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2" id="name1" style="border-right: 0px;border-left: 0px;">
+                        <h3 style="text-align: center;">Total in words</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="container4" id="container4">
+        <div class="row name5">
+            <div class="col-3" style="border-right:2px solid  rgb(0, 0, 83) ; ">
+                <h3 style="text-align: center;" id="align1">EC23456</h3>
+            </div>
+            <div class="col-3" style="border-right:2px solid ;">
+                <h3 id="align1">Electron circuit</h3>
+            </div>
+            <div class="col-1" style="border-right:2px solid ;">
+                <h3 id="align1">100</h3>
+            </div>
+            <div class="col-3" style="border-right:2px solid ;">
+                <div class="row name6">
+                    <div class="col-4"><input type="number" id="theory1" onchange="calculateTotal()"></div>
+                    <div class="col-4"><input type="number" id="practical1" onchange="calculateTotal()"></div>
+                    <div class="col-4"><input type="number" id="total1" readonly></p></div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h4 id="align" style="text-align: center;">Zero Zero</h4>
+            </div>
+        </div>
+        <div class="row name7">
+            <div class="col-3" style="border-right:2px solid ;">
+                <h3 style="text-align: center;" id="align1">EC23446</h3>
+            </div>
+            <div class="col-3"style="border-right:2px solid ;">
+                <h3 id="align1">Linear Integration</h3>
+            </div>
+            <div class="col-1" style="border-right:2px solid ;">
+                <h3 id="align1">100</h3>
+            </div>
+            <div class="col-3" style="border-right:2px solid ;">
+                <div class="row name6">
+                    <div class="col-4"><input type="number" id="theory2" onchange="calculateTotal()"></div>
+                    <div class="col-4"><input type="number" id="practical2" onchange="calculateTotal()"></div>
+                    <div class="col-4"><input input type="number" id="total2" readonly ></div>
+                </div>
+            </div>
+            <div class="col-2" >
+                <h4 id="align2" style="text-align: center;">Zero Zero</h4>
+            </div>
+        </div>
+        <div class="row name9">
+            <div class="col-3" style="border-right:2px solid ;">
+                <h3 style="text-align: center;" id="align1">EC23994</h3>
+            </div>
+            <div class="col-3" style="border-right:2px solid ;">
+                <h3 id="align1">Digital Circuits</h3>
+            </div>
+            <div class="col-1" style="border-right:2px solid ;">
+                <h3 id="align1">100</h3>
+            </div>
+            <div class="col-3" style="border-right:2px solid ;">
+                <div class="row name6">
+                    <div class="col-4"><input type="number" id="theory3" onchange="calculateTotal()"></div>
+                    <div class="col-4"><input type="number" id="practical3" onchange="calculateTotal()"></div>
+                    <div class="col-4"><input input type="number" id="total3" readonly></div>
+                </div>
+            </div>
+            <div class="col-2" >
+                <h4 id="align3" style="text-align: center;">Zero Zero</h4>
+            </div>
+        </div>
+        <div class="row name15">
+            <div class="col-3" style="border-right:2px solid ;">
+                <h3 style="text-align: center;" id="align1">EC23282</h3>
+            </div>
+            <div class="col-3" style="border-right:2px solid ;">
+                <h3 id="align1">Electronics Circuits</h3>
+            </div>
+            <div class="col-1" style="border-right:2px solid ;">
+                <h3 id="align1">100</h3>
+            </div>
+            <div class="col-3" style="border-right:2px solid ;">
+                <div class="row name6">
+                    <div class="col-4"><input type="number" id="theory4" onchange="calculateTotal()"></div>
+                    <div class="col-4"><input type="number" id="practical4" onchange="calculateTotal()"></div>
+                    <div class="col-4"><input input type="number" id="total4" readonly></div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h4 id="align4" style="text-align: center;">Zero Zero</h4>
+            </div>
+            
+        </div>
+        <div class="row name25">
+            <div class="col-3" style="border-right:2px solid ;">
+                <h3 style="text-align: center;" id="align1">EC22874</h3>
+            </div>
+            <div class="col-3" style="border-right:2px solid ;">
+                <h3 id="align1">Analog Circuits</h3>
+            </div>
+            <div class="col-1" style="border-right:2px solid ;">
+                <h3 id="align1">100</h3>
+            </div>
+            <div class="col-3" style="border-right:2px solid ;">
+                <div class="row name6">
+                    <div class="col-4"><input type="number" id="theory5" onchange="calculateTotal()"></div>
+                    <div class="col-4"><input type="number" id="practical5" onchange="calculateTotal()"></div>
+                    <div class="col-4"><input input type="number" id="total5" readonly></div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h4 id="align5" style="text-align: center;">Zero Zero</h4>
+            </div>   
+        </div>
+        <div class="row name15">
+            <div class="col-3" style="border-right:2px solid ;">
+                <h3 style="text-align: center;" id="align1">EC23282</h3>
+            </div>
+            <div class="col-3" style="border-right:2px solid ;">
+                <h3 id="align1">Electronics Circuits</h3>
+            </div>
+            <div class="col-1" style="border-right:2px solid ;">
+                <h3 id="align1">100</h3>
+            </div>
+            <div class="col-3" style="border-right:2px solid ;">
+                <div class="row name6">
+                    <div class="col-4"><input type="number" id="theory6" onchange="calculateTotal()"></div>
+                    <div class="col-4"><input type="number" id="practical6" onchange="calculateTotal()"></div>
+                    <div class="col-4"><input input type="number" id="total6" readonly></div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h4 id="align6" style="text-align: center;">Zero Zero</h4>
+            </div>
+            
+        </div>
+        <div class="row name15">
+            <div class="col-3" style="border-right:2px solid ;">
+                <h3 style="text-align: center;" id="align1">EC23282</h3>
+            </div>
+            <div class="col-3" style="border-right:2px solid ;">
+                <h3 id="align1">Electronics Circuits</h3>
+            </div>
+            <div class="col-1" style="border-right:2px solid ;">
+                <h3 id="align1">100</h3>
+            </div>
+            <div class="col-3" style="border-right:2px solid ;">
+                <div class="row name6">
+                    <div class="col-4"><input type="number" id="theory7" onchange="calculateTotal()"></div>
+                    <div class="col-4"><input type="number" id="practical7" onchange="calculateTotal()"></div>
+                    <div class="col-4"><input input type="number" id="total7" readonly></div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h4 id="align7" style="text-align: center;">Zero Zero</h4>
+            </div>
+            
+        </div>
+        <div class="row name15">
+            <div class="col-3" style="border-right:2px solid ;">
+                <h3 style="text-align: center;" id="align1">EC23282</h3>
+            </div>
+            <div class="col-3" style="border-right:2px solid ;">
+                <h3 id="align1">Electronics Circuits</h3>
+            </div>
+            <div class="col-1" style="border-right:2px solid ;">
+                <h3 id="align1">100</h3>
+            </div>
+            <div class="col-3" style="border-right:2px solid ;">
+                <div class="row name6">
+                    <div class="col-4"><input type="number" id="theory8" onchange="calculateTotal()" ></div>
+                    <div class="col-4"><input type="number" id="practical8" onchange="calculateTotal()"></div>
+                    <div class="col-4"><input input type="number" id="total8" readonly></div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h4 id="align8" style="text-align: center;">Zero Zero</h4>
+            </div>
+            
+        </div>
+    </div>
+    <div id="container5">
+        <div class="col-12" id="name1"style="border-right: 0px;border-left: 0px; ;">
+            <h3 id="tot" style="margin-left: 110px; font-family: 'Times New Roman', Times, serif;border-right: 0px;border-left: 0px;">Grand Total :<span id="grandTotal">0</span></h3>
+            <h3 id="tot" style="margin-left: 110px; font-family: 'Times New Roman', Times, serif;border-right: 0px;border-left: 0px;">In Words : <span id="grandTotalWords">Zero</span></h3>
+        </div>
+    </div>
+    <div class="container name6"style="border-right: 0px;border-left: 0px;border-top:0px">
+        <div class="row name4">
+        <div class="col-3" id="name1"style="border-right: 0px;border-left: 0px;border-top :0px;">
+            <h3 style="text-align: center;border-top: 0px;">Month and Year of Examination</h3>
+        </div>
+        <div class="col-3" id="name1" style="border-top :0px;">
+            <h3 style="text-align: center;">No.of Subjects Offered</h3>
+        </div>
+        <div class="col-2" id="name1"style="border-right: 0px;border-left: 0px;border-top :0px;">
+            <h3 style="text-align: center;">Results</h3>
+        </div>
+        <div class="col-2" id="name1" style="border-top :0px;">
+            <h3 style="text-align: center;">Percentage</h3>
+        </div>
+        <div class="col-2" id="name1"style="border-right: 0px;border-left: 0px;border-top :0px;">
+            <h3 style="text-align: center;border-right: 0px;border-left: 0px;">Grade</h3>
+        </div>
+    </div>
+    <div class="container7">
+        <div class="row name6">
+        <div class="col-3" id="name1"style="border-right: 0px;border-left: 0px;border-top :0px;">
+            <h3 style="text-align: center;">May 2024</h3>
+        </div>
+        <div class="col-3" id="name1"style="border-top :0px;border-top :0px;">
+            <h3 style="text-align: center;">T5+p3</h3>
+        </div>
+        <div class="col-2" id="name1"style="border-right: 0px;border-left: 0px;border-top :0px;">
+            <h3 style="text-align: center;">PASS</h3>
+        </div>
+        <div class="col-2" id="name1"style="border-top :0px;">
+            <h3 style="text-align: center;" id="per">0.00%</h3>
+        </div>
+        <div class="col-2" id="name1"style="border-right: 0px;border-left: 0px;border-top :0px;">
+            <h3 style="text-align: center;" id="Grade">Grade</h3>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="container-fluid 2 " >
+<div class="container10" style=" font-family: 'Times New Roman', Times, serif; font-display: 2px;" >
+    <p id="para" style="margin: 0px 300px; text-align: center; font-size: large; font-weight: bolder">This Sample of Annual Statement of Mark is prepared ass per Sill Developement Management Initiative under Ministry of Sill Developement Management  and Enterprenuship , Government of India</p>
+</div>
+<div class="container8">
+    <div class="row name8">
+        <div class="col-6">
+            <h3  id="date"> <span id="date1">Date : </span> 29/01/2023</h3>          
+        </div>
+        <div class="col-6">
+            <h3 style="padding: 10px 90px;" id="sign">(signature of Deputy Controller of Examination)</h3>
+            <h3 id="con">Deputy Controller of Examination</h3>          
+        </div>
+    </div>
+</div>
+<div class="container9">
+    <div class="row name9">
+        <div class="col-12">
+        <h3 style="padding-left: 50px;" id="foot1">Subject marked with <span id="star">*</span>  Indicates Exemption</h3>
+    </div>
+    <br>
+    <!-- <div class="col-1">
+        <h3 id="star">*</h3>
+    </div>
+    <div class="col-5">
+        <h3  id="foot2">Indicates Exemption</h3>
+    </div> -->
+    </div>
+</div>
+</div>
+    </div>
+</div>
+</body>
+<script>
+
+        function calculateTotal() {
+    // Get values from the input fields
+    let theory1 = parseFloat(document.getElementById('theory1').value) || 0;
+    let practical1 = parseFloat(document.getElementById('practical1').value) || 0;
+    let theory2 = parseFloat(document.getElementById('theory2').value) || 0;
+    let practical2 = parseFloat(document.getElementById('practical2').value) || 0;
+    let theory3 = parseFloat(document.getElementById('theory3').value) || 0;
+    let practical3 = parseFloat(document.getElementById('practical3').value) || 0;
+    let theory4 = parseFloat(document.getElementById('theory4').value) || 0;
+    let practical4 = parseFloat(document.getElementById('practical4').value) || 0;
+    let theory5 = parseFloat(document.getElementById('theory5').value) || 0;
+    let practical5 = parseFloat(document.getElementById('practical5').value) || 0;
+    let theory6 = parseFloat(document.getElementById('theory6').value) || 0;
+    let practical6 = parseFloat(document.getElementById('practical6').value) || 0;
+    let theory7 = parseFloat(document.getElementById('theory7').value) || 0;
+    let practical7 = parseFloat(document.getElementById('practical7').value) || 0;
+    let theory8 = parseFloat(document.getElementById('theory8').value) || 0;
+    let practical8 = parseFloat(document.getElementById('practical8').value) || 0;
+
+    // Calculate total for each subject
+    let total1 = theory1 + practical1;
+    let total2 = theory2 + practical2;
+    let total3 = theory3 + practical3;
+    let total4 = theory4 + practical4;
+    let total5 = theory5 + practical5;
+    let total6 = theory6 + practical6;
+    let total7 = theory7 + practical7;
+    let total8 = theory8 + practical8;
+
+    if(total1>100 ||total2>100 ||total3>100 ||total4>100 ||total5>100 ||total6>100 ||total7>100 ||total8>100)
+    alert("Please Enter a Valid Marks");
+
+    // Set the total value in the respective field
+    document.getElementById('total1').value = total1;
+    document.getElementById('total2').value = total2;
+    document.getElementById('total3').value = total3;
+    document.getElementById('total4').value = total4;
+    document.getElementById('total5').value = total5;
+    document.getElementById('total6').value = total6;
+    document.getElementById('total7').value = total7;
+    document.getElementById('total8').value = total8;
+
+    // Calculate the grand total
+    let grandTotal = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8;
+
+    // Update the grand total field
+    document.getElementById('grandTotal').textContent = grandTotal;
+    let  maxTotalScore=800;
+    let percentage = (grandTotal/ maxTotalScore) * 100;
+    document.getElementById('per').textContent = percentage.toFixed(2) + '%';
+    if(percentage>=90)
+    document.getElementById("Grade").innerText="A";
+    if(percentage>70 && percentage<90)
+    document.getElementById("Grade").innerText="B";
+
+    if(percentage>40 && percentage<70)
+    document.getElementById("Grade").innerText="C";
+
+    if(percentage<40)
+    document.getElementById("Grade").innerText="F";
+
+
+
+    // Convert grand total to words
+    document.getElementById('grandTotalWords').textContent = numberToWords(grandTotal);
+    document.getElementById('align').textContent = numberToWords(total1);
+    document.getElementById('align2').textContent = numberToWords(total2);
+    document.getElementById('align3').textContent = numberToWords(total3);
+    document.getElementById('align4').textContent = numberToWords(total4);
+    document.getElementById('align5').textContent = numberToWords(total5);
+    document.getElementById('align6').textContent = numberToWords(total6);
+    document.getElementById('align7').textContent = numberToWords(total7);
+    document.getElementById('align8').textContent = numberToWords(total8);
+}
+
+// Function to convert number to words (basic implementation)
+function numberToWords(num) {
+    const ones = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"];
+    const teens = ["Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"];
+    const tens = ["", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"];
+    const thousands = ["", "Thousand"];
+
+    let words = '';
+
+    if (num === 0) return ones[0];
+
+    // Handle numbers up to 9999
+    if (num > 999) {
+        words += ones[Math.floor(num / 1000)] + ' Thousand ';
+        num %= 1000;
+    }
+    if (num > 99) {
+        words += ones[Math.floor(num / 100)] + ' Hundred ';
+        num %= 100;
+    }
+    if (num > 19) {
+        words += tens[Math.floor(num / 10)] + ' ';
+        num %= 10;
+    }
+    if (num > 9) {
+        words += teens[num - 10] + ' ';
+        num = 0;
+    }
+    if (num > 0) {
+        words += ones[num] + ' ';
+    }
+
+    return words.trim();
+}
+
+</script>
+
+</html>
